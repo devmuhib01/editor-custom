@@ -1,0 +1,30 @@
+// function addLink() {
+//   const selection = window.getSelection();
+//   const range = selection.getRangeAt(0);
+
+//   const link = document.createElement("a");
+//   link.href = prompt("Enter link URL:", "http://");
+//   range.surroundContents(link);
+
+//   range.collapse(false);
+
+//   // Remove the selection and add the modified range back
+//   selection.removeAllRanges();
+//   selection.addRange(range);
+// }
+
+// function removeLink() {
+//   const selection = window.getSelection();
+
+//   // if (!selection.isCollapsed) {
+//   const range = selection.getRangeAt(0);
+//   const ancestor = range.commonAncestorContainer;
+
+//   // Check if the selection is within a link
+//   const link = ancestor.nodeType === 3 ? ancestor.parentElement : ancestor;
+//   if (link.tagName === "A") {
+//     const textNode = document.createTextNode(link.textContent);
+//     link.parentNode.replaceChild(textNode, link);
+//   }
+//   // }
+// }
